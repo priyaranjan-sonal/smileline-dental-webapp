@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, MessageCircle, Calendar, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
 import WhatsAppIcon from '../components/WhatsAppIcon';
 import AppointmentForm from '../components/AppointmentForm';
 
@@ -46,7 +46,7 @@ export default function Contact() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: (idx % 4) * 0.1 }}
-                    className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 transition-all group flex flex-col items-center text-center lg:items-start lg:text-left hover:shadow-md cursor-pointer block"
+                    className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 transition-all group flex flex-col items-center text-center lg:items-start lg:text-left hover:shadow-md cursor-pointer"
                   >
                     <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-colors ${item.color === 'whatsapp' ? 'bg-[#25D366]/10 text-[#25D366] group-hover:bg-[#25D366] group-hover:text-white' :
                       'bg-primary-50 text-primary-800 group-hover:bg-primary-800 group-hover:text-white'

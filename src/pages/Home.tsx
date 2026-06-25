@@ -87,7 +87,7 @@ export default function Home() {
             alt="Modern Dental Clinic"
             className="w-full h-full object-cover opacity-10"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-50/50 via-white to-white" />
+          <div className="absolute inset-0 bg-linear-to-b from-primary-50/50 via-white to-white" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -258,7 +258,7 @@ export default function Home() {
             <button
               onClick={prevDoc}
               disabled={isPrevDisabled}
-              className={`flex-shrink-0 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center text-slate-600 transition-all ${
+              className={`shrink-0 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center text-slate-600 transition-all ${
                 isPrevDisabled 
                   ? 'opacity-0 pointer-events-none' 
                   : 'hover:bg-primary-800 hover:text-white hover:border-primary-800'
@@ -284,14 +284,14 @@ export default function Home() {
                   >
                     <div className="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 flex flex-col h-full">
                       {/* Doctor Photo */}
-                      <div className="relative h-64 overflow-hidden flex-shrink-0">
+                      <div className="relative h-64 overflow-hidden shrink-0">
                         <img
                           src={doctor.image}
                           alt={doctor.name}
                           className="w-full h-full object-cover object-top"
                           draggable={false}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end p-5">
+                        <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent flex items-end p-5">
                           <span className="text-white text-xs font-semibold bg-primary-800/80 backdrop-blur-sm px-3 py-1.5 rounded-full">
                             {doctor.specialty}
                           </span>
@@ -335,7 +335,7 @@ export default function Home() {
             <button
               onClick={nextDoc}
               disabled={isNextDisabled}
-              className={`flex-shrink-0 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center text-slate-600 transition-all ${
+              className={`shrink-0 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center text-slate-600 transition-all ${
                 isNextDisabled 
                   ? 'opacity-0 pointer-events-none' 
                   : 'hover:bg-primary-800 hover:text-white hover:border-primary-800'
@@ -449,14 +449,14 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.1 }}
-                className="relative rounded-[2rem] overflow-hidden aspect-[4/3] group"
+                className="relative rounded-4xl overflow-hidden aspect-4/3 group"
               >
                 <img
                   src={img.url}
                   alt={img.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                   <p className="text-white font-bold">{img.title}</p>
                 </div>
               </motion.div>
