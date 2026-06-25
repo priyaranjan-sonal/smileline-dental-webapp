@@ -1,0 +1,5 @@
+{
+  "name": "SmileLine Dental Clinic",
+  "description": "Modern dental care in Calicut, Kerala. Professional treatments including implants, orthodontics, and cosmetic dentistry.",
+  "requestFramePermissions": ["geolocation"]
+}
