@@ -19,7 +19,7 @@ export default function Footer() {
               Providing world-class dental care in Calicut. Our mission is to deliver professional, modern, and gentle dental treatments to ensure your smile stays healthy and beautiful.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all">
+              <a href="https://www.instagram.com/priyaranjans_/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all">
                 <Instagram size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
